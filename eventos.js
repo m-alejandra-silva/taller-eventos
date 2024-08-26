@@ -7,8 +7,9 @@ document.addEventListener("DOMContentLoaded", function() {
             alert('Hola! Soy el div');
         }
     });
-    
-    button.addEventListener('click', function() {
+
+    button.addEventListener('click', function(event) {
         alert('Hola!');
+        event.stopPropagation();
     });
 });
